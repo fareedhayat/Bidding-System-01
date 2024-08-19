@@ -3,21 +3,21 @@
 
 // const ViewItems = () => {
 //   const items = [
-//     { id: 1, title: 'Antique Clock', category: 'Antiques', price: '$200', image: 'antique-clock.jpg' },
-//     { id: 2, title: 'Painting', category: 'Arts', price: '$300', image: 'painting.jpg' },
-//     { id: 3, title: 'Diamond Ring', category: 'Jewelry & Watches', price: '$500', image: 'diamond-ring.jpg' },
-//     { id: 4, title: 'Vintage Car', category: 'Cars', price: '$10,000', image: 'vintage-car.jpg' },
-//     { id: 5, title: 'Scrap Metal', category: 'Scrap', price: '$50', image: 'scrap-metal.jpg' },
-//     { id: 6, title: 'Antique Vase', category: 'Antiques', price: '$150', image: 'antique-vase.jpg' },
-//     { id: 7, title: 'Sculpture', category: 'Arts', price: '$400', image: 'sculpture.jpg' },
-//     { id: 8, title: 'Gold Necklace', category: 'Jewelry & Watches', price: '$700', image: 'gold-necklace.jpg' },
-//     { id: 9, title: 'Classic Car', category: 'Cars', price: '$20,000', image: 'classic-car.jpg' },
-//     { id: 10, title: 'Metal Scrap', category: 'Scrap', price: '$70', image: 'metal-scrap.jpg' },
-//     { id: 11, title: 'Antique Chair', category: 'Antiques', price: '$180', image: 'antique-chair.jpg' },
-//     { id: 12, title: 'Portrait', category: 'Arts', price: '$350', image: 'portrait.jpg' },
-//     { id: 13, title: 'Silver Watch', category: 'Jewelry & Watches', price: '$600', image: 'silver-watch.jpg' },
-//     { id: 14, title: 'Sports Car', category: 'Cars', price: '$30,000', image: 'sports-car.jpg' },
-//     { id: 15, title: 'Electronic Scrap', category: 'Scrap', price: '$80', image: 'electronic-scrap.jpg' }
+//     { id: 1, title: 'Antique Clock', category: 'Antiques', price: 'Rs.200', image: 'antique-clock.jpg' },
+//     { id: 2, title: 'Painting', category: 'Arts', price: 'Rs.300', image: 'painting.jpg' },
+//     { id: 3, title: 'Diamond Ring', category: 'Jewelry & Watches', price: 'Rs.500', image: 'diamond-ring.jpg' },
+//     { id: 4, title: 'Vintage Car', category: 'Cars', price: 'Rs.10,000', image: 'vintage-car.jpg' },
+//     { id: 5, title: 'Scrap Metal', category: 'Scrap', price: 'Rs.50', image: 'scrap-metal.jpg' },
+//     { id: 6, title: 'Antique Vase', category: 'Antiques', price: 'Rs.150', image: 'antique-vase.jpg' },
+//     { id: 7, title: 'Sculpture', category: 'Arts', price: 'Rs.400', image: 'sculpture.jpg' },
+//     { id: 8, title: 'Gold Necklace', category: 'Jewelry & Watches', price: 'Rs.700', image: 'gold-necklace.jpg' },
+//     { id: 9, title: 'Classic Car', category: 'Cars', price: 'Rs.20,000', image: 'classic-car.jpg' },
+//     { id: 10, title: 'Metal Scrap', category: 'Scrap', price: 'Rs.70', image: 'metal-scrap.jpg' },
+//     { id: 11, title: 'Antique Chair', category: 'Antiques', price: 'Rs.180', image: 'antique-chair.jpg' },
+//     { id: 12, title: 'Portrait', category: 'Arts', price: 'Rs.350', image: 'portrait.jpg' },
+//     { id: 13, title: 'Silver Watch', category: 'Jewelry & Watches', price: 'Rs.600', image: 'silver-watch.jpg' },
+//     { id: 14, title: 'Sports Car', category: 'Cars', price: 'Rs.30,000', image: 'sports-car.jpg' },
+//     { id: 15, title: 'Electronic Scrap', category: 'Scrap', price: 'Rs.80', image: 'electronic-scrap.jpg' }
 //   ];
 
 //   const baseURL = '/uploads/';
@@ -56,21 +56,21 @@ import { CenterFocusStrong } from '@mui/icons-material';
 
 const ViewItems = () => {
   const items = [
-    { id: 1, title: 'Antique Clock', category: 'Antiques', price: '$200', image: 'antique-clock.jpg' },
-    { id: 2, title: 'Painting', category: 'Arts', price: '$300', image: 'painting.jpg' },
-    { id: 3, title: 'Diamond Ring', category: 'Jewelry & Watches', price: '$500', image: 'diamond-ring.jpg' },
-    { id: 4, title: 'Vintage Car', category: 'Cars', price: '$10,000', image: 'vintage-car.jpg' },
-    { id: 5, title: 'Scrap Metal', category: 'Scrap', price: '$50', image: 'scrap-metal.jpg' },
-    { id: 6, title: 'Antique Vase', category: 'Antiques', price: '$150', image: 'antique-vase.jpg' },
-    { id: 7, title: 'Sculpture', category: 'Arts', price: '$400', image: 'sculpture.jpg' },
-    { id: 8, title: 'Gold Necklace', category: 'Jewelry & Watches', price: '$700', image: 'gold-necklace.jpg' },
-    { id: 9, title: 'Classic Car', category: 'Cars', price: '$20,000', image: 'classic-car.jpg' },
-    { id: 10, title: 'Metal Scrap', category: 'Scrap', price: '$70', image: 'metal-scrap.jpg' },
-    { id: 11, title: 'Antique Chair', category: 'Antiques', price: '$180', image: 'antique-chair.jpg' },
-    { id: 12, title: 'Portrait', category: 'Arts', price: '$350', image: 'portrait.jpg' },
-    { id: 13, title: 'Silver Watch', category: 'Jewelry & Watches', price: '$600', image: 'silver-watch.jpg' },
-    { id: 14, title: 'Sports Car', category: 'Cars', price: '$30,000', image: 'sports-car.jpg' },
-    { id: 15, title: 'Electronic Scrap', category: 'Scrap', price: '$80', image: 'electronic-scrap.jpg' }
+    { id: 1, title: 'Antique Clock', category: 'Antiques', price: 'Rs.200', image: 'antique-clock.jpg' },
+    { id: 2, title: 'Painting', category: 'Arts', price: 'Rs.300', image: 'painting.jpg' },
+    { id: 3, title: 'Diamond Ring', category: 'Jewelry & Watches', price: 'Rs.500', image: 'diamond-ring.jpg' },
+    { id: 4, title: 'Vintage Car', category: 'Cars', price: 'Rs.10,000', image: 'vintage-car.jpg' },
+    { id: 5, title: 'Scrap Metal', category: 'Scrap', price: 'Rs.50', image: 'scrap-metal.jpg' },
+    { id: 6, title: 'Antique Vase', category: 'Antiques', price: 'Rs.150', image: 'antique-vase.jpg' },
+    { id: 7, title: 'Sculpture', category: 'Arts', price: 'Rs.400', image: 'sculpture.jpg' },
+    { id: 8, title: 'Gold Necklace', category: 'Jewelry & Watches', price: 'Rs.700', image: 'gold-necklace.jpg' },
+    { id: 9, title: 'Classic Car', category: 'Cars', price: 'Rs.20,000', image: 'classic-car.jpg' },
+    { id: 10, title: 'Metal Scrap', category: 'Scrap', price: 'Rs.70', image: 'metal-scrap.jpg' },
+    { id: 11, title: 'Antique Chair', category: 'Antiques', price: 'Rs.180', image: 'antique-chair.jpg' },
+    { id: 12, title: 'Portrait', category: 'Arts', price: 'Rs.350', image: 'portrait.jpg' },
+    { id: 13, title: 'Silver Watch', category: 'Jewelry & Watches', price: 'Rs.600', image: 'silver-watch.jpg' },
+    { id: 14, title: 'Sports Car', category: 'Cars', price: 'Rs.30,000', image: 'sports-car.jpg' },
+    { id: 15, title: 'Electronic Scrap', category: 'Scrap', price: 'Rs.80', image: 'electronic-scrap.jpg' }
   ];
 
   const baseURL = '/uploads/';

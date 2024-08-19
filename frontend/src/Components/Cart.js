@@ -75,7 +75,7 @@ const Cart = () => {
                 <TableCell>{item.title}</TableCell>
                 <TableCell>{item.description}</TableCell>
                 <TableCell>{item.category}</TableCell>
-                <TableCell>${item.startingBidAmount}</TableCell>
+                <TableCell>₨.{item.startingBidAmount}</TableCell>
                 <TableCell>
                   <IconButton onClick={() => handleOpen(item)} color="primary">
                     <InfoIcon />
@@ -134,7 +134,7 @@ const Cart = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell component="th" scope="row">Purchased for</TableCell>
-                    <TableCell>${selectedItem.startingBidAmount}</TableCell>
+                    <TableCell>₨.{selectedItem.startingBidAmount}</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

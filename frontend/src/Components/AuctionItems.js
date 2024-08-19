@@ -230,7 +230,7 @@ const AuctionItems = () => {
   const [selectedItemId, setSelectedItemId] = useState(null);
 
   const user = JSON.parse(sessionStorage.getItem('user'));
-  const baseURL = '/uploads/';
+  const baseURL = 'uploads/';
   const userId = user.user._id;
   const userName = user.user.name;
   const userCategory = user.user.categories[0];
@@ -402,8 +402,8 @@ const AuctionItems = () => {
                   <Card.Text className="text-truncate mb-1"><strong>Description: </strong>{item.description}</Card.Text>
                   {item.isSold === false && (
                     <>
-                      <Card.Text className="mb-1">Starting Bid: ${item.startingBidAmount}</Card.Text>
-                      <Card.Text className="mb-1">Minimum Bid: ${item.minBidAmount}</Card.Text>
+                      <Card.Text className="mb-1">Starting Bid: ₨.{item.startingBidAmount}</Card.Text>
+                      <Card.Text className="mb-1">Minimum Bid: ₨.{item.minBidAmount}</Card.Text>
                       <Card.Text className="mb-1">Bid Duration: {item.bidDuration} days</Card.Text>
                     </>
                   )}

@@ -165,8 +165,8 @@ const UserItems = () => {
               <img src={`${baseURL}${item.images[0]}`} alt={item.title} style={{ height: '50px', width: '50px', borderRadius: '50%' }} />
               </td>
               <td>{item.bidDuration} days</td>
-              <td>${item.minBidAmount}</td>
-              <td>${item.startingBidAmount}</td>
+              <td>₨.{item.minBidAmount}</td>
+              <td>₨.{item.startingBidAmount}</td>
               <td>
                 <Button variant="info" size="sm" onClick={() => handleShowUpdateModal(item)}>Update</Button>{' '}
                 <Button variant="danger" size="sm" onClick={() => handleDelete(item._id)}>Delete</Button>

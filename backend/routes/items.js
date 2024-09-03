@@ -5,7 +5,7 @@ const Item = require('../models/Item');
 
 // Define the file upload path where images will be stored.
 // const FileUploadPath = 'D:/Online-Bidding-System/onlinebidding-react/public/uploads';
-const FileUploadPath = 'C:/Users/fareed.hayat/bidding-system-pictures-folder';
+const FileUploadPath = 'C:/Users/fareed.hayat/Desktop/fyp/Bidding-System-01/frontend/public/uploads';
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {

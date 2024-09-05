@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <header style={{ position: 'relative', height: '100vh', overflow: 'hidden', backgroundColor: '#291E47' }}>
-        <Carousel controls={false} indicators={false} interval={3000} prevLabel="" nextLabel="">
+        <Carousel controls={false} indicators={false} interval={1000} prevLabel="" nextLabel="">
           <Carousel.Item>
             <img className="d-block w-100" src={bannerImage1} alt="Banner 1" style={{ objectFit: 'cover', height: '100vh' }} />
           </Carousel.Item>

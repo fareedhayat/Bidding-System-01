@@ -220,6 +220,7 @@ import axios from 'axios';
 import { Container, Card, Button, Row, Col, Modal, Table } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ItemDetailsModal from './ItemDetailsModal';
 
 const AuctionItems = () => {
   const [items, setItems] = useState([]);
@@ -229,6 +230,9 @@ const AuctionItems = () => {
   const [bidDetails, setBidDetails] = useState([]);
   const [selectedItemId, setSelectedItemId] = useState(null);
 
+  
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
   const user = JSON.parse(sessionStorage.getItem('user'));
   const baseURL = 'uploads/';
   const userId = user.user._id;
@@ -368,20 +372,18 @@ const AuctionItems = () => {
     return () => clearInterval(intervalId);
   }, [items]);
 
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
 
   const fetchBidDetails = async (itemId) => {
     try {
       const res = await axios.get(`http://localhost:5000/api/auctionItems/details/${itemId}`);
-      setBidDetails(res.data.bids);
-      console.log(res.data.bids);
+      setBidDetails(res.data.bids);  // Ensure bidDetails is updated
       setSelectedItemId(itemId);
-      handleShowModal();
+      setShowModal(true);  // Ensure the modal is set to open
     } catch (error) {
       console.error('Error fetching bid details:', error);
     }
   };
+  
 
   return (
     <>
@@ -478,6 +480,12 @@ const AuctionItems = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+      <ItemDetailsModal
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+        bidDetails={bidDetails}
+      />
+      <ToastContainer position="bottom-right" className="toast-container" />
     </>
   );
 };

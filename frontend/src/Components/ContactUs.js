@@ -31,9 +31,9 @@ const ContactUs = () => {
             <div className="col-md-6">
               <div className="contact-info">
                 <h4>Contact Information:</h4>
-                <p><strong>Email:</strong> info@example.com</p>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                <p><strong>Email:</strong> info@gcu.edu.com</p>
+                <p><strong>Phone:</strong> 042-12345678</p>
+                <p><strong>Address:</strong> GC University, Lahore, Pakistan</p>
                 <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
               </div>
             </div>
